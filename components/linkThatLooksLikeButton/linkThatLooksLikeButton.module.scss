@@ -1,0 +1,6 @@
+@import "../../styles/default.module.scss";
+
+.link {
+  @extend %button;
+  display: block;
+}

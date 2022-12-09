@@ -1,0 +1,9 @@
+.textInput {
+  font-size: 1.4rem;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline-color: var(--blue);
+  }
+}

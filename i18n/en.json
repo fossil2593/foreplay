@@ -1,0 +1,11 @@
+{
+    "app.title": "Foreplay",
+    "numberOfParticipants.header": "How many people are playing today?",
+    "numberOfParticipantsButton.label": "{numberOfParticipants, plural, one {# Player} other {# Players}}",
+    "playerInput.header": "What are the players' names?",
+    "playerInput.label": "Player {participantNumber}",
+    "playerInput.buttonLabel": "Play",
+    "play.instruction": "{actor}, {action} {recipient}'s {area}.",
+    "play.nextTurn": "Next Turn",
+    "play.startOver": "Start Over"
+}
