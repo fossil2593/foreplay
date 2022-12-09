@@ -3,4 +3,15 @@
 .link {
   @extend %button;
   display: block;
+
+  &[aria-disabled="true"] {
+    cursor: not-allowed;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: white;
+      border-color: var(--light-accent);
+    }
+  }
 }

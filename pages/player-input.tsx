@@ -33,7 +33,10 @@ export default function PlayerInput() {
           />
         ))}
       </Grid>
-      <LinkThatLooksLikeButton href="/play">
+      <LinkThatLooksLikeButton
+        href="/play"
+        disabled={participants.some((participant) => !participant.name)}
+      >
         <h2>
           <FormattedMessage id="playerInput.buttonLabel" />
         </h2>

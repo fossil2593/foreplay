@@ -7,5 +7,6 @@
     "playerInput.buttonLabel": "Play",
     "play.instruction": "{actor}, {action} {recipient}'s {area}.",
     "play.nextTurn": "Next Turn",
-    "play.startOver": "Start Over"
+    "play.startOver": "Start Over",
+    "play.spiceItUp": "Spice It Up 🌶️"
 }
