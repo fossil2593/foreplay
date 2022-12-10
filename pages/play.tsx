@@ -58,8 +58,8 @@ export default function Play() {
         <FormattedMessage
           id="play.instruction"
           values={{
-            actor: rolledActor?.name,
-            recipient: rolledRecipient?.name,
+            actor: rolledActor?.name.trim(),
+            recipient: rolledRecipient?.name.trim(),
             action: rolledAction,
             area: rolledArea.area,
           }}

@@ -18,7 +18,7 @@ export const ParticipantInput: React.FC<Props> = ({ participant, index }) => {
     dispatch(
       participantsSlice.actions.updateParticipantName({
         key: participant.key,
-        name: value.trim(),
+        name: value,
       })
     );
   };
