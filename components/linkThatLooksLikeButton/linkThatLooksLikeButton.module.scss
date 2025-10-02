@@ -1,4 +1,4 @@
-@import "../../styles/default.module.scss";
+@use "../../styles/default.module.scss";
 
 .link {
   @extend %button;

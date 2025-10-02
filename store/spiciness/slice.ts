@@ -11,5 +11,6 @@ export const spicinessSlice = createSlice({
     turnItUp: (state) => {
       return state + 1;
     },
+    reset: () => initialState
   },
 });
