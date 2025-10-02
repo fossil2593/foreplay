@@ -1,13 +1,13 @@
-import * as React from "react";
+import { MouseEvent, FC, ReactNode } from "react";
 import styles from "./button.module.scss";
 
 interface Props {
-  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
-  children: React.ReactNode;
+  onClick: (event: MouseEvent<HTMLButtonElement>) => void;
+  children: ReactNode;
   type?: "primary" | "secondary";
 }
 
-export const Button: React.FC<Props> = ({ onClick, children, type }) => (
+export const Button: FC<Props> = ({ onClick, children, type }) => (
   <button onClick={onClick} className={styles.button} data-type={type}>
     {children}
   </button>

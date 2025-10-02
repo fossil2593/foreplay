@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import * as React from "react";
+import { FC } from "react";
 import { useDispatch } from "react-redux";
 import { FormattedMessage } from "react-intl";
 import { participantsSlice } from "../../store/participants/slice";
@@ -9,7 +9,7 @@ interface Props {
   numberOfParticipants: number;
 }
 
-export const NumberOfParticipantsButton: React.FC<Props> = ({
+export const NumberOfParticipantsButton: FC<Props> = ({
   numberOfParticipants,
 }) => {
   const dispatch = useDispatch();
@@ -19,7 +19,7 @@ export const NumberOfParticipantsButton: React.FC<Props> = ({
     dispatch(
       participantsSlice.actions.setNumberOfParticipants(numberOfParticipants)
     );
-    router.push("/player-input");
+    void router.push("/player-input");
   };
 
   return (

@@ -1,10 +1,10 @@
-import * as React from "react";
+import { ReactNode, FC } from "react";
 import styles from "./grid.module.scss";
 
 interface Props {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
-export const Grid: React.FC<Props> = ({ children }) => (
+export const Grid: FC<Props> = ({ children }) => (
   <div className={styles.grid}>{children}</div>
 );

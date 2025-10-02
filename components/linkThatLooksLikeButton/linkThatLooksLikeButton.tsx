@@ -1,5 +1,5 @@
 import Link from "next/link";
-import * as React from "react";
+import { FC, JSX } from "react";
 import styles from "./linkThatLooksLikeButton.module.scss";
 
 interface Props {
@@ -8,7 +8,7 @@ interface Props {
   disabled?: boolean;
 }
 
-export const LinkThatLooksLikeButton: React.FC<Props> = ({
+export const LinkThatLooksLikeButton: FC<Props> = ({
   href,
   children,
   disabled,

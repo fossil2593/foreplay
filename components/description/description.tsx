@@ -1,10 +1,10 @@
-import * as React from "react";
+import { ReactNode, FC } from "react";
 import styles from "./description.module.scss";
 
 interface Props {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
-export const Description: React.FC<Props> = ({ children }) => (
+export const Description: FC<Props> = ({ children }) => (
   <p className={styles.description}>{children}</p>
 );

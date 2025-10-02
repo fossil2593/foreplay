@@ -1,5 +1,5 @@
 import { useAppSelector } from "../store";
-import * as React from "react";
+import { useEffect, useState } from "react";
 import { Page } from "../components/page/page";
 import { Description } from "../components/description/description";
 import { getParticipants } from "../store/participants/selectors";
@@ -17,13 +17,13 @@ import { actionsAndAreas } from "../store/actionsAndAreas";
 export default function Play() {
   const participants = useAppSelector(getParticipants) || [];
   const spiciness = useAppSelector((state) => state.spiciness);
-  const [rollCount, setRollCount] = React.useState(0);
+  const [rollCount, setRollCount] = useState(0);
   const router = useRouter();
   const dispatch = useDispatch();
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!participants?.length) {
-      router.replace("/");
+      void router.replace("/");
     }
   }, [participants?.length, router]);
 

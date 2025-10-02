@@ -1,7 +1,7 @@
-import * as React from "react";
+import { FC } from "react";
 import Head from "next/head";
 
-export const DocumentHead: React.FC = () => (
+export const DocumentHead: FC = () => (
   <Head>
     <title>Foreplay</title>
     <meta

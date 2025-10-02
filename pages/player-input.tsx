@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import * as React from "react";
+import { useEffect } from "react";
 import { FormattedMessage } from "react-intl";
 import { Description } from "../components/description/description";
 import { Grid } from "../components/grid/grid";
@@ -13,9 +13,9 @@ export default function PlayerInput() {
   const participants = useAppSelector(getParticipants);
   const router = useRouter();
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!participants?.length) {
-      router.replace("/");
+      void router.replace("/");
     }
   }, [participants?.length, router]);
 

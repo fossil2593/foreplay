@@ -1,4 +1,4 @@
-import * as React from "react";
+import { FC } from "react";
 import { Card } from "../../components/card/card";
 import { TextInput } from "../../components/textInput/textInput";
 import { Participant, participantsSlice } from "../../store/participants/slice";
@@ -11,7 +11,7 @@ interface Props {
   index: number;
 }
 
-export const ParticipantInput: React.FC<Props> = ({ participant, index }) => {
+export const ParticipantInput: FC<Props> = ({ participant, index }) => {
   const dispatch = useDispatch();
 
   const onChange = (value: string) => {

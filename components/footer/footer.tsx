@@ -1,7 +1,7 @@
-import * as React from "react";
+import { FC } from "react";
 import styles from "./footer.module.scss";
 
-export const Footer: React.FC = () => (
+export const Footer: FC = () => (
   <footer className={styles.footer}>
     <a
       href="https://www.joyclub.de/profile/8641279.herr_und_frau.html"

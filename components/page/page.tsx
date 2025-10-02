@@ -1,13 +1,13 @@
-import * as React from "react";
+import { ReactNode, FC } from "react";
 import { DocumentHead } from "../documentHead/documentHead";
 import { Footer } from "../footer/footer";
 import styles from "../../styles/default.module.scss";
 
 interface Props {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
-export const Page: React.FC<Props> = ({ children }) => (
+export const Page: FC<Props> = ({ children }) => (
   <div className={styles.container}>
     <DocumentHead />
 

@@ -1,4 +1,4 @@
-import * as React from "react";
+import { ChangeEvent, FC } from "react";
 import styles from "./textInput.module.scss";
 
 interface Props {
@@ -7,8 +7,8 @@ interface Props {
   onChange: (value: string) => void;
 }
 
-export const TextInput: React.FC<Props> = ({ id, value, onChange }) => {
-  const onChange_ = (event: React.ChangeEvent<HTMLInputElement>) => {
+export const TextInput: FC<Props> = ({ id, value, onChange }) => {
+  const onChange_ = (event: ChangeEvent<HTMLInputElement>) => {
     onChange(event.target.value);
   };
 
